@@ -22,11 +22,11 @@ function App() {
         <button type="submit">Login</button>
       </form>
 
-      <a href="http://localhost:8000/api/user">see logged in user</a>
+      <a href="/api/user">see logged in user</a>
       <form method='POST' action="/api/logout">
       <button type="submit">Logout</button>
       </form>
-      <a href="http://localhost:8000/api/users">see all users</a>
+      <a href="/api/users">see all users</a>
     </div>
   );
 }

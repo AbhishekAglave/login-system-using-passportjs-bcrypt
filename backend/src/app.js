@@ -64,10 +64,15 @@ app.post("/api/logout", (req, res) => {
 });
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public/frontend")));
 
 app.use("/", indexRouter);
 
 app.use("/api", usersRouter);
+
+// app.get("*", (req, res) => {
+//   res.sendFile(__dirname + "/public/frontend/index.html");
+// });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
